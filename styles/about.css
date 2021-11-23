@@ -1,0 +1,162 @@
+.layout {
+    align-items: center;
+    gap: 48px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 12px 24px;
+}
+
+.ab_title {
+    font-size: var(--h2);
+    color: var(--b_);
+}
+
+.txt_par, .tt_pro, main {
+    text-align: center;
+}
+
+.txt_abt, .pro {
+    color: var(--txt_opt);
+    font-size: 1.6rem;
+}
+
+.ah {
+    color: var(--b_);
+    font-weight: 500;
+}
+
+.profile {
+    display: grid;
+    justify-items: center;
+    grid-gap: 32px;
+}
+
+.header_pro, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_pro {
+    gap: 8px;
+}
+
+.he_img {
+    height: 80px;
+    width: 80px;
+
+    background: var(--blue_black);
+    border-radius: 50%;
+}
+
+.h4 {
+    font-size: 2rem;
+    color: var(--b_);
+    margin-bottom: 8px;
+}
+
+main {
+    gap: 32px;
+}
+
+/* Projetcs */
+.projects {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+}
+
+.project {
+    height: 250px;
+    width: 250px;
+    background: none;
+}
+
+.txt_foot {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--blue_ligth);
+}
+
+.man {
+    content: "";
+    height: 220px;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.man.saf {
+    background: #d1dced;
+}
+
+.man.net {
+    background: #000;
+}
+
+.man.zoom {
+    background: #5a9beb;
+}
+
+.saf svg, .zoom svg {
+    width: 160px;
+}
+
+.net svg {
+    width: 160px;
+    fill: #e50914;
+}
+
+.on-float.man svg{
+    animation: 4s infinite ease-in-out float;
+}
+
+.skill_cont {
+    width: 100%;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+i.fab {
+    font-size: 4rem;
+    color: #f1f1f1;
+    background: #272833;
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 6px;
+}
+
+@keyframes float {
+    0%, 100% {transform: translateY(-1px)}
+    50% {transform: translateY(20px)}
+}
+
+.footer_pro {
+    z-index: 2;
+    text-align: center;
+    background: var(--b_);
+    border-radius: 0 0 10px 10px;
+    height: 30px;
+    padding: 5px 0;
+}
+
+[data-theme ="dark" ] .footer_pro {
+  background: #272833;
+}

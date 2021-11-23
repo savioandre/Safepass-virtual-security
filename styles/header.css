@@ -1,0 +1,153 @@
+.bar_mobile {
+    display: none;
+    position: fixed;
+    top: 90px;
+    bottom: 0;
+    background: var(--back);
+    z-index: 20;
+    width: 100%;
+    overflow-y: auto;
+}
+
+ul.Bar_active {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.teste{
+    opacity: 1;
+}
+
+.inject {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+
+    display: grid;
+    grid-template-rows: auto;
+
+    width: 100%;
+    background: var(--inject);
+    box-shadow: 0px 6px 6px rgb(0, 0, 0, 6%);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.name {
+    width: 100%;
+    border-bottom: 1px solid rgba(42, 49, 79, 0.1);
+}
+
+.head-name {
+    color: var(--type);
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0 0 4px 0;
+}
+
+.Opt_Bar {
+    opacity: 1;
+    z-index: 1;
+    padding: 100px 24px 12px 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Bar li a svg {
+    transition: all 0.3s ease-in-out;
+
+}
+
+.active_bar {
+    display: block;
+    padding: calc(2rem + 5vh);
+}
+
+.ma_ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 32px 24px;
+}
+
+.ma_li {
+    padding: 10px 20px;
+}
+
+.ma_li a:hover {
+    color: #344AAb;
+}
+
+.Saf-dis {
+    display: none;
+    font-size: var(--h2);
+    color: var(--type);
+}
+
+.img_ma {
+    width: 100%;
+    display: flex;
+    padding: 12px 0;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+}
+
+.img_ma .img-bar {
+    position: absolute;
+    left: 24px;
+}
+
+.bar_mobile_footer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 48px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 56px;
+}
+
+.act_account {
+    text-align: center;
+    align-self: center;
+    margin-top: 80px;
+}
+
+.actions.new button {
+    border: none;
+}
+
+.insert_bar {
+    display: none;
+    margin-left: 16px;
+    font-size: 1.4rem;
+    color: var(--type);
+    cursor: pointer;
+}
+
+.insert_bar li:hover {
+    color: #344AAb;
+}
+
+.on-bar .insert_bar {
+    display: block;
+}
+
+.Bar_active .on-bar svg {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+}
+.Bar_active li svg {
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.img-bar {
+    width: 160px;
+}
+
+.str_active {
+    border-bottom: 3px solid #000;
+}

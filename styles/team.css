@@ -1,0 +1,173 @@
+.dream_team, .team_tittle, .content_team, .cont, .job_tittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dream_team {
+    gap: 80px;
+}
+
+.content_team {
+    width: 100%;
+    gap: 48px;
+    padding: 32px;
+}
+
+.job_tittle {
+    align-items: flex-start;
+}
+
+.cont {
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.H_tittle {
+    color: var(--b_);
+    font-weight: 800;
+}
+
+.h1_Pri {
+    font-size: var(--h1);
+}
+
+.p_pri {
+    font-size: 1.6rem;
+    color: var(--blue_dark);
+}
+
+.content_team .team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+    justify-content: center;
+    max-width: 1600px;
+    padding: 24px;
+}
+
+.pro_team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+}
+
+.ti_txt {
+    font-size: 2rem;
+    color: var(--b_);
+}
+
+.p_te {
+    font-size: 1.4rem;
+    color: #707070;
+}
+
+.img_fill {
+    height: 240px;
+    width: 240px;
+}
+
+.in-link {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 6px 0;
+    background: #344aad;
+    position: relative;
+    z-index: 10;
+    right: 10px;
+    float: right;
+    transform: translateY(-70px);
+    transition: all 0.4s ease-in-out;
+}
+
+.in-link:hover {
+    background: hsl(229, 56%, 44%);
+    box-shadow: 0px 0px 0 4px hsl(229, 56%, 44%, 0.4);
+    transition: all 0.4s ease-in-out;
+}
+
+.img_fill img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+}
+
+.in {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--back);
+}
+
+.job {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+
+    border-radius: 10px;
+    padding: 48px 48px 0 48px;
+    background: #D1DCED;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn_spot {
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    gap: 8px;
+
+    padding: 12px 24px;
+    width: 200px;
+    border: none;
+    border-radius: 30px;
+
+    transition: all 0.2s ease-in-out;
+    background: var(--blue);
+    cursor: pointer;
+}
+
+.btn_spot:hover {
+    gap: 24px;
+}
+
+[data-theme="dark"] .job{
+    background: #272833;
+}
+
+.spot {
+    color: var(--type);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.btn_spot svg path {
+    stroke: var(--type);
+}
+
+.img_job {
+    line-height: 0px;
+}
+
+.img_job img {
+    width: 320px;
+}
+
+.team .pro_team .img_fill img {
+    filter: none;
+}
+
+@media (max-width: 670px) {
+    .job {
+        flex-direction: column;
+        padding: 32px 32px 0 32px;
+    }
+}
+
+@media (max-width: 460px) {
+    .img_job img {
+        width: 100%;
+    }
+}
